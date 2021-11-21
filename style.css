@@ -1,0 +1,239 @@
+/*Menu*/
+*{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 0px;
+}
+
+menu{
+    width: 90%;
+  }
+  menu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  menu li{
+    float: left;
+    width: 19%;
+    text-align: center;
+  }
+  menu ul::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .nosel a{
+    color: #9C9C9C;
+    border-bottom: 2px solid transparent;
+  }
+  menu a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px;
+  }
+  .nosel a:hover{
+    color: #02c7a3;
+    border-bottom: 2px solid #02c7a3;
+  }
+  .sel a{
+    color: #808080;
+    border-bottom: 2px solid #808080;
+  }
+
+/*Image acceuil*/
+.contenant {
+    position: relative;
+    text-align: center;
+  }
+  .texte_centrer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*Taille element*/
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+}
+
+/*Barre de défilement*/
+
+/*Chrome, edge, safari*/
+  *::-webkit-scrollbar{
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: lightgray;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #77b5fe;
+    border-radius: 20px;
+    border: 3px solid lightgray;
+  }
+/*Firefox*/
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #77b5fe lightgray;
+  }
+
+/*Bouton page games*/
+.bn-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn-hover:focus {
+  outline: none;
+}
+
+.bn-hover.bn {
+    background-image: linear-gradient(
+      to right,
+      #ed6ea0,
+      #ec8c69,
+      #f7186a,
+      #fbb03b
+    );
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  }
+
+/*Bouton page du jeux*/
+.bn2 {
+  border: none;
+  padding: 0.8em 2.5em;
+  outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.bn2:before,
+.bn2:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+.bn2:before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
+}
+
+.bn2:after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+.bn2:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+.bn3 {
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #00a84f;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+}
+
+.bn3:hover {
+  color: #fff;
+}
+
+.bn3 .bn3span {
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn3:hover .bn3span {
+  background: transparent;
+}
+
+/*V2 interface*/
+.game{
+display: block;
+height: 300px;
+}
+.fixe{
+  border-radius: 15px;
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+}
+.fixe:hover{
+background-color: rgb(247, 247, 247);
+box-shadow: #ddd 4px 4px 4px;
+}
+.contdiv{
+  padding-right: 20px;
+  width: 60%;
+  float: right;
+}
