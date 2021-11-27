@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+main{
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+    border-radius: 15px;
+}
+
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+#nav-droite{
+    right: 20px;
+}
+#nav-gauche{
+    left: 20px;
+}
+
+.elements{
+    display: flex;
+    transition: 0.5s linear;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(220, 220, 220, 0.8);
+    border-radius: 15px;
+    text-align: center;
+}
