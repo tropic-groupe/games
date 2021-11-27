@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Les jeux de Tropic games sont jouable en ligne et téléchargeable gratuitement"/>
+    <title>Games | Tropic Games</title>
+    <link href="https://tropic-groupe.github.io/files/tropic-games.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Menu -->
+    <div><a style="position: absolute; top: 55px; left: 1050px;" href="https://tropic-groupe.github.io/games/fr/"><img src="https://tropic-groupe.github.io/files/fr.png" height="40px" style=" border-radius: 10px;"/></a>
+      <a style="position: absolute; top: 55px; left: 1150px;" href="https://tropic-groupe.github.io/games/en/"><img src="https://tropic-groupe.github.io/files/us.png" height="40px" style="border-radius: 10px;"/></a></div>
+
+      <menu>
+        <ul>
+          <li style="opacity: 0%;">.</li>
+          <li class="nosel"><a href="https://tropic-groupe.github.io/games/en/">Home</a></li>
+          <li class="sel"><a href="https://tropic-groupe.github.io/games/en/games">Games</a></li>
+          <li class="nosel"><a href="https://tropic-groupe.github.io/games/en/store">Store</a></li>
+      </li>
+    </ul>
+    </menu>
+<a href="https://tropic-groupe.github.io/games/en/"><img src="https://tropic-groupe.github.io/files/tropic-games.png" height="70px" style="position: absolute; top: 40px; left: 100px"></a>
+
+<!-- Bouton haut de page-->
+<style>
+  #scrollUp
+  {
+  position: fixed;
+  bottom : 10px;
+  right: -100px;
+  opacity: 0.5;
+  }
+  </style>
+   
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script>
+    $(function(){
+    $("#scrollUp").click(function(){
+        $("html, body").animate({scrollTop: 0},"slow");
+    });
+});
+              jQuery(function(){
+                  $(function () {
+                      $(window).scroll(function () {
+                          if ($(this).scrollTop() > 300 ) { 
+                              $('#scrollUp').css('right','10px');
+                          } else { 
+                              $('#scrollUp').removeAttr( 'style' );
+                          }
+   
+                      });
+                  });
+              });
+  </script>
+  </head>
+
+  <body>
+    <h1 style="color: orange; position: absolute; top: 85px; left: 550px">Our games</h1>
+
+<div class="fixe">
+<div class="game">
+<img src="../sns.PNG" height="300px" style="border-radius: 20px;">
+<div class="contdiv first">
+<h2>Sneaky Snake</h2>
+<h3>Description and control: </h3>
+<p class="descri">Eat the hamburger to earn points, there are 12 levels to go from one level to another you need a minimum of 20 points, you only have 125 sec to finish each level the more points you have the more the snake and long</p>
+<p>Move with the arrow keys (up, down, right, left arrow)</p>
+<a href="../play/sneaky-snake"><button class="bn-hover bn">JPlay now</button></a>
+</div>
+</div>
+</div>
+
+<!--Scratch wars1-->
+<div class="fixe">
+<div class="game">
+<img src="../sw1.webp" height="300px" style="border-radius: 20px;">
+<div class="contdiv">
+<h2>Scratch wars episode 1</h2>
+<h3>Description and control:</h3>
+<p class="descri">Move with arrow keys (right, left), A key to attack, up arrow key to jump.</p>
+<p>Move with arrow keys (right, left), A key to attack, up arrow key to jump</p>
+<a href="../play/scratch-wars-ep1"><button class="bn-hover bn">Play now</button></a>
+</div>
+</div>
+</div>
+
+<!--Scratch wars2-->
+<div class="fixe">
+<div class="game">
+<img src="../sw2.webp" height="300px" style="border-radius: 20px;">
+<div class="contdiv">
+<h2>Scratch wars episode 2</h2>
+<h3>Description and control:</h3>
+<p class="descri">Fight enemies, destroy the generator to open the door to move to next levels.</p>
+<p>Move with arrow keys (right, left), A key to attack, up arrow key to jump, and key 1 to 9 for change the color of the sword</p>
+<a href="../play/scratch-wars-ep2"><button class="bn-hover bn">Play now</button></a>
+</div>
+</div>
+</div>
+
+<!--Hill climb-->
+<div class="fixe">
+<div class="game">
+<img src="../hcr.webp" height="300px" style="border-radius: 20px;">
+<div class="contdiv">
+<h2>Hill Climb Racing</h2>
+<h3>Description and control:</h3>
+<p class="descri">Travel the longest distance possible, improve your vehicle, buy new circuits and vehicles.</p>
+<p>Move with arrow keys (right and left)</p>
+<a href="../play/hill-climb-racing"><button class="bn-hover bn">Play now</button></a>
+</div>
+</div>
+</div>
+
+    </body>
+
+<footer>
+<center style="position: absolute; top: 1700px; left: 2px;">
+<div class="contenant">
+  <img src="../banniere.png" height="444px" width="100%">
+  <div class="texte_centrer">
+    <h1 class="present title"><span style='color: orange'>Tropic <span style='color:lime'>Games</span></h1>
+    <p class="info title">Design, certain images and games on the site are copyright. It is forbidden to reuse the games, image of this site for commercial purposes</p>
+  </div>
+</div>
+ </center>
+
+<div style="cursor: pointer;"><img src="https://tropic-groupe.github.io/files/top.png" id="scrollUp"/></div>
+
+ <script src="../js.js"></script>
+
+</footer>
+
+  <style>
+    /*Corp de la page*/
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: transparent;
+    width: 90%;
+    padding: 20px;
+    color: grey;
+}
+h2{
+  margin: 1px;
+  color: lightseagreen;
+}
+h3{
+  margin: 1px;
+  color: lime;
+}
+a > img:hover{
+  border: 2px solid transparent;
+}
+  </style>
+</html>
